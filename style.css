@@ -1,3 +1,5 @@
+
+
 body {
   background-color: lightpink;
 }
@@ -7,14 +9,58 @@ body {
 	align-items: center;
 	justify-content: center;
 	
-	margin: 1rem;
+	margin: 1rem 20rem 1rem 20rem;
 	padding: 1rem;
+	font-family: Roboto, sans-serif;
+	border-radius: 1rem;
+}
+
+.gameSection {
+	background-color: #B6FFF4;
+	align-items: center;
+	justify-content: center;
+	
+	margin: 1rem 10rem 1rem 10rem;
+	padding: 1rem;
+	padding-bottom: 4rem;
 	font-family: Roboto, sans-serif;
 	border-radius: 1rem;
 	transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.intro:hover {
+.gameSection:hover {
   transform: translateY(-4px);
   box-shadow: 0 4px 20px #FF69B4;
+}
+
+.descriptionText {
+	display: inline;
+}
+
+.gameImage {
+	width: 300px;
+	height: 200px;
+	object-fit: cover;
+	object-position: center;
+	margin: 0px 30px 30px 0;
+	float: left;
+}
+
+.introImage {
+	width: 146.15px;
+	height: 157.5px;
+	margin: 0px 30px 30px 0;
+	float: left;
+	clip-path: circle(48%);
+	shape-outside: circle(50%);
+}
+
+h1 {
+	text-align: center;
+	font-family: calibri;
+}
+
+.slideSlide img {
+	width: 100%;
+	height: auto;
 }
