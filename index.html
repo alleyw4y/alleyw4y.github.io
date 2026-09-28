@@ -7,11 +7,13 @@
 
 <body>
 
-<div class="intro">
-	<h1>Alice Rennie <br> Personal Portfolio </h1>
-	<hr>
+<div class="header">
+  <h1>Alice Rennie</h1>
+  <p>Personal Portfolio</p>
+</div>
 
-	<section class="descriptionText">
+<div class="intro">
+	<section>
 		<h2>About me</h2>
 		<img class="introImage" src="Media\Alice.png" alt="This is me">
 		<p>Hi I'm Alice! I'm a 4th year student from Abertay University, currently studying Computer Games Applications Development. 
@@ -21,9 +23,10 @@
 		I'm also the Abertay Women's Basketball Captain, returning to my role for the second year! 
 		My favourite game of all time is Super Mario Galaxy.</p>
 	</section>
-
 </div>
+
 <hr>
+
 <h1>Projects</h1>
 
 <section class="gameSection">
@@ -69,6 +72,81 @@
 		I had two perspective cameras: a free roaming camera, and a rotating camera that were calculated using projection matrices. 
 		I was also introduced to transformation hierarchies, and produced a fruit bowl with individual transformations, and a squirrel character with a dynamic tail, moving up and down.</p>
 	</div>
+	
+	<!-- creating a slideshow for the picnic pictures--!>
+	<div class = "slideshowContainer">
+	
+		<div class = "myslidesFade">
+			<div class = "numberText">1 / 5</div>
+			<img class="gameImage" src="Media\Portrait.jpg" alt="This is picnic">
+		</div>
+		
+		<div class = "myslidesFade">
+			<div class = "numberText">2 / 5</div>
+			<img class="gameImage" src="Media\Portrait.jpg" alt="This is picnic">
+		</div>
+		
+		<div class = "myslidesFade">
+			<div class = "numberText">3 / 5</div>
+			<img class="gameImage" src="Media\Portrait.jpg" alt="This is picnic">
+		</div>
+		
+		<div class = "myslidesFade">
+			<div class = "numberText">4 / 5</div>
+			<img class="gameImage" src="Media\Portrait.jpg" alt="This is picnic">
+		</div>
+		
+		<div class = "myslidesFade">
+			<div class = "numberText">5 / 5</div>
+			<img class="gameImage" src="Media\Portrait.jpg" alt="This is picnic">
+		</div>
+		
+		<!-- Next and previous buttons !-->
+		<a class = "prev" onclick = "plusSlides(-1)">&#10094;</a>
+		<a class = "next" onclick = "plusSlides(1)">&#10095;</a>
+	</div>
+	<br>
+	
+	<!-- the dots !-->
+	<div style="text-align:center">
+		<span class = "dot" onclick = "currentSlide(1)"></span>
+		<span class = "dot" onclick = "currentSlide(2)"></span>
+		<span class = "dot" onclick = "currentSlide(3)"></span>
+		<span class = "dot" onclick = "currentSlide(4)"></span>
+		<span class = "dot" onclick = "currentSlide(5)"></span>
+	</div>
+	
+	<script>
+		let slideIndex = 1;
+		showSlides(slideIndex);
+
+		// Next/previous controls
+		function plusSlides(n) {
+		  showSlides(slideIndex += n);
+		}
+
+		// Thumbnail image controls
+		function currentSlide(n) {
+		  showSlides(slideIndex = n);
+		}
+
+		function showSlides(n) {
+		  let i;
+		  let slides = document.getElementsByClassName("mySlides");
+		  let dots = document.getElementsByClassName("dot");
+		  if (n > slides.length) {slideIndex = 1}
+		  if (n < 1) {slideIndex = slides.length}
+		  for (i = 0; i < slides.length; i++) {
+			slides[i].style.display = "none";
+		  }
+		  for (i = 0; i < dots.length; i++) {
+			dots[i].className = dots[i].className.replace(" active", "");
+		  }
+		  slides[slideIndex-1].style.display = "block";
+		  dots[slideIndex-1].className += " active";
+		}	
+	</script>
+	
 </section>
 
 <section class="gameSection">
