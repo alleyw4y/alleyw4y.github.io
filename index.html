@@ -15,13 +15,18 @@
 <div class="intro">
 	<section>
 		<h2>About me</h2>
-		<img class="introImage" src="Media\Alice.png" alt="This is me">
+		<img class="introImage" src="Media\Alice.png" alt="This is me" id = "ogPortrait">
 		<p>Hi I'm Alice! I'm a 4th year student from Abertay University, currently studying Computer Games Applications Development. 
 		I've been interested in programming since I was young, and ended up winning the higher computing prize for my high school. 
 		In my free time I love reading, playing basketball, and of course - gaming. I'm the secretary of the Women in Games society, 
 		while also being a Women in Games ambassador, which focuses on introducing Women into the games industry. 
 		I'm also the Abertay Women's Basketball Captain, returning to my role for the second year! 
 		My favourite game of all time is Super Mario Galaxy.</p>
+		
+		<script>
+		
+		
+		</script>
 	</section>
 </div>
 
@@ -29,165 +34,189 @@
 
 <h1>Projects</h1>
 
-<section class="gameSection">
-	<h2>Post Mortem | 2026</h2>
-	<div class="descriptionText">
-		<p>Post Mortem is a horror-focused adventure puzzle game in which you play as a Detective investigating an abandoned mansion. 
-		It was created as part of a group project for university, with us receiving industry mentoring throughout the project. 
-		As our game was narrative focused, I created a dialogue system in Unreal Engine 5.6, using interfaces to communicate across different NPCs. 
-		I also created an item system to show what objects had been collected throughout the game, and a timer system to add challenge and tension to the game through a stalking enemy.</p>
-		<img class="gameImage" src="Media\PostMortem.gif" alt="This is post mortem">
-		<br>
-		<a href="https://wicked-lynx.itch.io/post-mortem">Click here to view on itch!</a>
-	</div>
-</section>
+<div class = "projectsBox">
 
-<section class="gameSection">
-	<h2>Camping Scene | 2025</h2>
-	<div class="descriptionText">
-		<p>FFor CMP301, I was tasked with programming a comprehensive scene using DirectX and C++. 
-		This was my first experience of programming shaders, and consolidated my knowledge of complex geometry, lighting and texturing, 
-		while also teaching me new skills such as post processing, render textures and graphics pipelines. 
-		I utilised the vertex and pixel shaders in order to create my scene, while optimising my code by using an hlsli file where I could to reuse code.</p>
-		<img class="gameImage" src="Media\CampingScene.gif" alt="This is camping">
-	</div>
-</section>
+	<section class="gameSection">
+		<h2>Post Mortem | 2026</h2>
+		<div class="descriptionText">
+			<img class="gameImage" src="Media\PostMortem.gif" alt="This is post mortem">
+			<p>Post Mortem is a horror-focused adventure puzzle game in which you play as a Detective investigating an abandoned mansion. 
+			It was created as part of a group project for university, with us receiving industry mentoring throughout the project. 
+			As our game was narrative focused, I created a dialogue system in Unreal Engine 5.6, using interfaces to communicate across different NPCs. 
+			I also created an item system to show what objects had been collected throughout the game, and a timer system to add challenge and tension to the game through a stalking enemy.</p>
+			<br>
+			<a href="https://wicked-lynx.itch.io/post-mortem">Click here to view on itch!</a>
+		</div>
+	</section>
 
-<section class="gameSection">
-	<h2>Wager of the Wolf | 2025</h2>
-	<div class="descriptionText">
-		<p>Wager of the Wolf is a group project with the goal of utilising the functionality of the PlayStation 5 controller. 
-		We prioritised implementing tilt controls and haptic feedback through use of the triggers and controller vibration. 
-		I also created an audio system through accessing the player state to choose the correct audio track to be played for each action (eg: running, sliding, attacking, jumping). 
-		This project was programmed using university made framework, and PS5 development kits.</p>
-		<img class="gameImage" src="Media\WageroftheWolf.gif" alt="This is wager of the wolf">
-	</div>
-</section>
+	<section class="gameSection">
+		<h2>Camping Scene | 2025</h2>
+		<div class="descriptionText">
+			<img class="gameImage" src="Media\CampingScene.gif" alt="This is camping">
+			<p>FFor CMP301, I was tasked with programming a comprehensive scene using DirectX and C++. 
+			This was my first experience of programming shaders, and consolidated my knowledge of complex geometry, lighting and texturing, 
+			while also teaching me new skills such as post processing, render textures and graphics pipelines. 
+			I utilised the vertex and pixel shaders in order to create my scene, while optimising my code by using an hlsli file where I could to reuse code.</p>
+		</div>
+	</section>
 
-<section class="gameSection">
-	<h2>Picnic Scene | 2024</h2>
-	<div class="descriptionText">
-		<p>CMP203 was my first introduction to graphics programming, using geometry to create a scene. 
-		I gained a deeper understanding of vertex mapping in order to render different simple shapes such as cone, cylinder, cube and sphere. 
-		I had two perspective cameras: a free roaming camera, and a rotating camera that were calculated using projection matrices. 
-		I was also introduced to transformation hierarchies, and produced a fruit bowl with individual transformations, and a squirrel character with a dynamic tail, moving up and down.</p>
-	</div>
-	
-	<!-- creating a slideshow for the picnic pictures--!>
-	<div class = "slideshowContainer">
-	
-		<div class = "myslidesFade">
-			<div class = "numberText">1 / 5</div>
-			<img class="gameImage" src="Media\Portrait.jpg" alt="This is picnic">
+	<section class="gameSection">
+		<h2>Wager of the Wolf | 2025</h2>
+		<div class="descriptionText">
+			<img class="gameImage" src="Media\WageroftheWolf.gif" alt="This is wager of the wolf">
+			<p>Wager of the Wolf is a group project with the goal of utilising the functionality of the PlayStation 5 controller. 
+			We prioritised implementing tilt controls and haptic feedback through use of the triggers and controller vibration. 
+			I also created an audio system through accessing the player state to choose the correct audio track to be played for each action (eg: running, sliding, attacking, jumping). 
+			This project was programmed using university made framework, and PS5 development kits.</p>
+		</div>
+	</section>
+
+	<section class="gameSection">
+		<h2>Picnic Scene | 2024</h2>
+		
+		<div class="descriptionText">
+		
+			<!-- creating a slideshow for the picnic pictures-->
+			<div class="slideshow-container">
+
+			  <!-- Full-width images with number and caption text -->
+			  <div class="mySlides fade">
+				<div class="numbertext">1 / 4</div>
+				<img class="gameImage" src="Media\PicnicBear.png">
+			  </div>
+
+			  <div class="mySlides fade">
+				<div class="numbertext">2 / 4</div>
+				<img class="gameImage" src="Media\PicnicBowl.gif">
+			  </div>
+
+			  <div class="mySlides fade">
+				<div class="numbertext">3 / 4</div>
+				<img class="gameImage" src="Media\PicnicIceCream.png">
+			  </div>
+			  
+			  <div class="mySlides fade">
+				<div class="numbertext">4 / 4</div>
+				<img class="gameImage" src="Media\PicnicSquirrel.gif">
+			  </div>
+			
+			</div>
+		
+			<p>CMP203 was my first introduction to graphics programming, using geometry to create a scene. 
+			I gained a deeper understanding of vertex mapping in order to render different simple shapes such as cone, cylinder, cube and sphere. 
+			I had two perspective cameras: a free roaming camera, and a rotating camera that were calculated using projection matrices. 
+			I was also introduced to transformation hierarchies, and produced a fruit bowl with individual transformations, and a squirrel character with a dynamic tail, moving up and down.</p>
 		</div>
 		
-		<div class = "myslidesFade">
-			<div class = "numberText">2 / 5</div>
-			<img class="gameImage" src="Media\Portrait.jpg" alt="This is picnic">
-		</div>
-		
-		<div class = "myslidesFade">
-			<div class = "numberText">3 / 5</div>
-			<img class="gameImage" src="Media\Portrait.jpg" alt="This is picnic">
-		</div>
-		
-		<div class = "myslidesFade">
-			<div class = "numberText">4 / 5</div>
-			<img class="gameImage" src="Media\Portrait.jpg" alt="This is picnic">
-		</div>
-		
-		<div class = "myslidesFade">
-			<div class = "numberText">5 / 5</div>
-			<img class="gameImage" src="Media\Portrait.jpg" alt="This is picnic">
-		</div>
-		
-		<!-- Next and previous buttons !-->
-		<a class = "prev" onclick = "plusSlides(-1)">&#10094;</a>
-		<a class = "next" onclick = "plusSlides(1)">&#10095;</a>
-	</div>
-	<br>
-	
-	<!-- the dots !-->
-	<div style="text-align:center">
-		<span class = "dot" onclick = "currentSlide(1)"></span>
-		<span class = "dot" onclick = "currentSlide(2)"></span>
-		<span class = "dot" onclick = "currentSlide(3)"></span>
-		<span class = "dot" onclick = "currentSlide(4)"></span>
-		<span class = "dot" onclick = "currentSlide(5)"></span>
-	</div>
-	
-	<script>
-		let slideIndex = 1;
-		showSlides(slideIndex);
+		<script>
+		/* 
+			let slideIndex = 1;
+			showSlides(slideIndex);
 
-		// Next/previous controls
-		function plusSlides(n) {
-		  showSlides(slideIndex += n);
-		}
+			// Next/previous controls
+			function plusSlides(n) {
+			  showSlides(slideIndex += n);
+			}
 
-		// Thumbnail image controls
-		function currentSlide(n) {
-		  showSlides(slideIndex = n);
-		}
+			// Thumbnail image controls
+			function currentSlide(n) {
+			  showSlides(slideIndex = n);
+			}
 
-		function showSlides(n) {
-		  let i;
-		  let slides = document.getElementsByClassName("mySlides");
-		  let dots = document.getElementsByClassName("dot");
-		  if (n > slides.length) {slideIndex = 1}
-		  if (n < 1) {slideIndex = slides.length}
-		  for (i = 0; i < slides.length; i++) {
-			slides[i].style.display = "none";
-		  }
-		  for (i = 0; i < dots.length; i++) {
-			dots[i].className = dots[i].className.replace(" active", "");
-		  }
-		  slides[slideIndex-1].style.display = "block";
-		  dots[slideIndex-1].className += " active";
-		}	
-	</script>
-	
-</section>
+			function showSlides(n) {
+			  let i;
+			  let slides = document.getElementsByClassName("mySlides");
+			  let dots = document.getElementsByClassName("dot");
+			  if (n > slides.length) {slideIndex = 1}
+			  if (n < 1) {slideIndex = slides.length}
+			  for (i = 0; i < slides.length; i++) {
+				slides[i].style.display = "none";
+			  }
+			  for (i = 0; i < dots.length; i++) {
+				dots[i].className = dots[i].className.replace(" active", "");
+			  }
+			  slides[slideIndex-1].style.display = "block";
+			  dots[slideIndex-1].className += " active";
+			}	
+			
+				<!-- Next and previous buttons -->
+		  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+		<!-- the dots -->
+		<div style="text-align:center">
+			<span class = "dot" onclick = "currentSlide(1)"></span>
+			<span class = "dot" onclick = "currentSlide(2)"></span>
+			<span class = "dot" onclick = "currentSlide(3)"></span>
+			<span class = "dot" onclick = "currentSlide(4)"></span>
+		</div>
+			
+			
+			*/
+			
+			let slideIndex = 0;
+			showSlides();
 
-<section class="gameSection">
-	<h2>Abyssal Descent: Becoming the Fish | 2024</h2>
-	<div class="descriptionText">
-		<p>Abyssal Descent was my first group project, and the first game I created in university, coded using C++ and SFML. 
-		It helped me understand how to make large scale object oriented programs, and made me more comfortable using pointers in a game project. 
-		It was originally a group project which was later taken by each member and individually expanded. 
-		I decided to add in cutscenes and a dialogue system, in order to introduce the player using a tutorial. I also refined some of the items and weapons in order to improve game feel. 
-		I briefly played around with audio, and created a near death filter to display across the screen (baby's first post processing effect!)</p>
-		<img class="gameImage" src="Media\AbyssalDescentBTF.gif" alt="This is becoming the fish">
-	</div>
-</section>
+			function showSlides() {
+			  let i;
+			  let slides = document.getElementsByClassName("mySlides");
+			  for (i = 0; i < slides.length; i++) {
+				slides[i].style.display = "none";
+			  }
+			  slideIndex++;
+			  if (slideIndex > slides.length) {slideIndex = 1}
+			  slides[slideIndex-1].style.display = "block";
+			  setTimeout(showSlides, 5000); // 5 seconds
+			}
+			
+			
+		</script>
+		
+	</section>
+
+	<section class="gameSection">
+		<h2>Abyssal Descent: Becoming the Fish | 2024</h2>
+		<div class="descriptionText">
+			<img class="gameImage" src="Media\AbyssalDescentBTF.gif" alt="This is becoming the fish">
+			<p>Abyssal Descent was my first group project, and the first game I created in university, coded using C++ and SFML. 
+			It helped me understand how to make large scale object oriented programs, and made me more comfortable using pointers in a game project. 
+			It was originally a group project which was later taken by each member and individually expanded. 
+			I decided to add in cutscenes and a dialogue system, in order to introduce the player using a tutorial. I also refined some of the items and weapons in order to improve game feel. 
+			I briefly played around with audio, and created a near death filter to display across the screen (baby's first post processing effect!)</p>
+		</div>
+	</section>
+</div>
 
 <hr>
+
 <h1>Works in progress</h1>
 
-<section class="gameSection">
-	<h2>Carnimals | 2026</h2>
-	<div class="descriptionText">
-		<p>Carnimals was a summer project to reinforce the skills I learnt from Unreal Engine programming in the previous semester. 
-		A prototype was created within two weeks, including character customisation, a lobby scene and a minigame. 
-		This project was my first instance of mobile development, and required me to research and implement UE5's mobile porting. 
-		I used android studio to emulate a phone on my PC, and also transferred the prototype so it was physically playable. 
-		I would love to revisit this project, with the possibility of creating more minigames to enrich the gameplay.</p>
-		<img class="gameImage" src="Media\Carnimals.gif" alt="This is carnimals">
-	</div>
-</section>
+<div class = "projectsBox">
 
-<section class="gameSection">
-	<h2>Parry Mechanic | 2025</h2>
-	<div class="descriptionText">
-		<p>CMP302 was my first time in Unreal Engine, and challenged me to implement a mechanic into a scenario. 
-		I chose to implement a basic parry, counter and blocking system. 
-		I created specific time windows in which the different mechanics would occur, and a cooldown window in order to add challenge and skill to the mechanic. 
-		I made this system compatible with UE5's combat pack. 
-		In the future, I would like to expand this to create a combat wave prototype, where you must defeat enemies using the damage you inflict from the counter timing. </p>
-		<img class="gameImage" src="Media\ParryMechanic.gif" alt="This is parry">
-	</div>
-</section>
+	<section class="gameSection">
+		<h2>Carnimals | 2026</h2>
+		<div class="descriptionText">
+			<img class="gameImage" src="Media\Carnimals.gif" alt="This is carnimals">
+			<p>Carnimals was a summer project to reinforce the skills I learnt from Unreal Engine programming in the previous semester. 
+			A prototype was created within two weeks, including character customisation, a lobby scene and a minigame. 
+			This project was my first instance of mobile development, and required me to research and implement UE5's mobile porting. 
+			I used android studio to emulate a phone on my PC, and also transferred the prototype so it was physically playable. 
+			I would love to revisit this project, with the possibility of creating more minigames to enrich the gameplay.</p>
+		</div>
+	</section>
 
+	<section class="gameSection">
+		<h2>Parry Mechanic | 2025</h2>
+		<div class="descriptionText">
+			<img class="gameImage" src="Media\ParryMechanic.gif" alt="This is parry">
+			<p>CMP302 was my first time in Unreal Engine, and challenged me to implement a mechanic into a scenario. 
+			I chose to implement a basic parry, counter and blocking system. 
+			I created specific time windows in which the different mechanics would occur, and a cooldown window in order to add challenge and skill to the mechanic. 
+			I made this system compatible with UE5's combat pack. 
+			In the future, I would like to expand this to create a combat wave prototype, where you must defeat enemies using the damage you inflict from the counter timing. </p>
+		</div>
+	</section>
+
+</div>
 
 </body>
 

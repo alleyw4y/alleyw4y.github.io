@@ -1,4 +1,11 @@
+html {
+	box-sizing: border-box;
+	background-color: #450920;
+}
 
+*, *:before, *:after {
+	box-sizing: inherit;
+}
 
 body {
   background-color: #f9dbbd;
@@ -32,9 +39,10 @@ body {
 	align-items: center;
 	justify-content: center;
 	
+	height: 400px;
+	
 	margin: 50px;
 	padding: 20px;
-	padding-bottom: 4rem;
 	font-family: Roboto, sans-serif;
 	border-radius: 1rem;
 	transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -42,7 +50,14 @@ body {
 
 .gameSection:hover {
 	transform: translateY(-4px);
-	box-shadow: 0 4px 20px #FF69B4;
+	box-shadow: 0 4px 20px #450920;
+}
+
+.projectsBox {
+	background-color: #da627d;
+	margin: 50px;
+	padding: 20px;
+	border-radius: 1rem;
 }
 
 .descriptionText {
@@ -52,10 +67,8 @@ body {
 }
 
 .gameImage {
-	width: 300px;
-	max-width: 100%;
-	height: auto;
-	max-height: 200px;
+	width: 400px;
+	height: 250px;
 	object-fit: cover;
 	object-position: center;
 	margin: 0px 30px 30px 0;
@@ -76,6 +89,7 @@ body {
 .introImage:hover {
 	transform: scale(1.2,1.2);
 	filter: drop-shadow(4px 4px 20px #FF69B4);
+	
 }
 
 h1 {
@@ -83,18 +97,13 @@ h1 {
 	font-family: calibri;
 }
 
-.slideSlide img {
-	width: 100%;
-	height: auto;
-}
-
 /* for the image carousel*/
 
-* {box-sizing:border-box}
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
+  float:left;
+  max-width: 500px;
   position: relative;
   margin: auto;
 }
