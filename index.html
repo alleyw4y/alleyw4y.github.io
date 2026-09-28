@@ -15,18 +15,14 @@
 <div class="intro">
 	<section>
 		<h2>About me</h2>
-		<img class="introImage" src="Media\Alice.png" alt="This is me" id = "ogPortrait">
+		<img src="Media/Alice.png" onmouseover="this.src='Media/Puter.png'" onmouseout="this.src='Media/Alice.png'" alt="hover image" class="introImage">
 		<p>Hi I'm Alice! I'm a 4th year student from Abertay University, currently studying Computer Games Applications Development. 
 		I've been interested in programming since I was young, and ended up winning the higher computing prize for my high school. 
 		In my free time I love reading, playing basketball, and of course - gaming. I'm the secretary of the Women in Games society, 
-		while also being a Women in Games ambassador, which focuses on introducing Women into the games industry. 
+		while also being a Women in Games ambassador, which focuses on creating cafe spaces and introducing women into the industry. 
 		I'm also the Abertay Women's Basketball Captain, returning to my role for the second year! 
 		My favourite game of all time is Super Mario Galaxy.</p>
 		
-		<script>
-		
-		
-		</script>
 	</section>
 </div>
 
@@ -39,7 +35,9 @@
 	<section class="gameSection">
 		<h2>Post Mortem | 2026</h2>
 		<div class="descriptionText">
+			<p>
 			<img class="gameImage" src="Media\PostMortem.gif" alt="This is post mortem">
+			</p>
 			<p>Post Mortem is a horror-focused adventure puzzle game in which you play as a Detective investigating an abandoned mansion. 
 			It was created as part of a group project for university, with us receiving industry mentoring throughout the project. 
 			As our game was narrative focused, I created a dialogue system in Unreal Engine 5.6, using interfaces to communicate across different NPCs. 
@@ -108,69 +106,6 @@
 			I was also introduced to transformation hierarchies, and produced a fruit bowl with individual transformations, and a squirrel character with a dynamic tail, moving up and down.</p>
 		</div>
 		
-		<script>
-		/* 
-			let slideIndex = 1;
-			showSlides(slideIndex);
-
-			// Next/previous controls
-			function plusSlides(n) {
-			  showSlides(slideIndex += n);
-			}
-
-			// Thumbnail image controls
-			function currentSlide(n) {
-			  showSlides(slideIndex = n);
-			}
-
-			function showSlides(n) {
-			  let i;
-			  let slides = document.getElementsByClassName("mySlides");
-			  let dots = document.getElementsByClassName("dot");
-			  if (n > slides.length) {slideIndex = 1}
-			  if (n < 1) {slideIndex = slides.length}
-			  for (i = 0; i < slides.length; i++) {
-				slides[i].style.display = "none";
-			  }
-			  for (i = 0; i < dots.length; i++) {
-				dots[i].className = dots[i].className.replace(" active", "");
-			  }
-			  slides[slideIndex-1].style.display = "block";
-			  dots[slideIndex-1].className += " active";
-			}	
-			
-				<!-- Next and previous buttons -->
-		  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-		  <a class="next" onclick="plusSlides(1)">&#10095;</a>
-		<!-- the dots -->
-		<div style="text-align:center">
-			<span class = "dot" onclick = "currentSlide(1)"></span>
-			<span class = "dot" onclick = "currentSlide(2)"></span>
-			<span class = "dot" onclick = "currentSlide(3)"></span>
-			<span class = "dot" onclick = "currentSlide(4)"></span>
-		</div>
-			
-			
-			*/
-			
-			let slideIndex = 0;
-			showSlides();
-
-			function showSlides() {
-			  let i;
-			  let slides = document.getElementsByClassName("mySlides");
-			  for (i = 0; i < slides.length; i++) {
-				slides[i].style.display = "none";
-			  }
-			  slideIndex++;
-			  if (slideIndex > slides.length) {slideIndex = 1}
-			  slides[slideIndex-1].style.display = "block";
-			  setTimeout(showSlides, 5000); // 5 seconds
-			}
-			
-			
-		</script>
-		
 	</section>
 
 	<section class="gameSection">
@@ -217,6 +152,76 @@
 	</section>
 
 </div>
+
+<script>
+	//image swapping
+	function swapImage(source) {
+		document.getElementById("portraitImage").src = source;
+	}
+	
+	/* 
+		let slideIndex = 1;
+		showSlides(slideIndex);
+
+		// Next/previous controls
+		function plusSlides(n) {
+		  showSlides(slideIndex += n);
+		}
+
+		// Thumbnail image controls
+		function currentSlide(n) {
+		  showSlides(slideIndex = n);
+		}
+
+		function showSlides(n) {
+		  let i;
+		  let slides = document.getElementsByClassName("mySlides");
+		  let dots = document.getElementsByClassName("dot");
+		  if (n > slides.length) {slideIndex = 1}
+		  if (n < 1) {slideIndex = slides.length}
+		  for (i = 0; i < slides.length; i++) {
+			slides[i].style.display = "none";
+		  }
+		  for (i = 0; i < dots.length; i++) {
+			dots[i].className = dots[i].className.replace(" active", "");
+		  }
+		  slides[slideIndex-1].style.display = "block";
+		  dots[slideIndex-1].className += " active";
+		}	
+		
+			<!-- Next and previous buttons -->
+	  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+	  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+	<!-- the dots -->
+	<div style="text-align:center">
+		<span class = "dot" onclick = "currentSlide(1)"></span>
+		<span class = "dot" onclick = "currentSlide(2)"></span>
+		<span class = "dot" onclick = "currentSlide(3)"></span>
+		<span class = "dot" onclick = "currentSlide(4)"></span>
+	</div>
+		
+		
+		*/
+		
+		let slideIndex = 0;
+		showSlides();
+
+		function showSlides() {
+		  let i;
+		  let slides = document.getElementsByClassName("mySlides");
+		  for (i = 0; i < slides.length; i++) {
+			slides[i].style.display = "none";
+		  }
+		  slideIndex++;
+		  if (slideIndex > slides.length) {slideIndex = 1}
+		  slides[slideIndex-1].style.display = "block";
+		  setTimeout(showSlides, 5000); // 5 seconds
+		}
+			
+			
+</script>
+	
+	
 
 </body>
 

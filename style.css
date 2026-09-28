@@ -9,6 +9,10 @@ html {
 
 body {
   background-color: #f9dbbd;
+  max-width: 1024px;
+  min-width: 256px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .header {
@@ -20,10 +24,9 @@ body {
 }
 
 .intro {
-	width: 500px;
-	height: auto;
-	margin: 50px auto 50px auto;
-	padding: 50px;
+	min-height: 320px;
+	margin: 24px;
+	padding: 24px;
 
 	background-color: #a53860;
 	font-family: Roboto, sans-serif;
@@ -39,10 +42,10 @@ body {
 	align-items: center;
 	justify-content: center;
 	
-	height: 400px;
+	min-height: 320px;
 	
-	margin: 50px;
-	padding: 20px;
+	margin-bottom: 24px;
+	padding: 24px;
 	font-family: Roboto, sans-serif;
 	border-radius: 1rem;
 	transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -76,20 +79,22 @@ body {
 }
 
 .introImage {
-	width: 146.15px;
+	width: 150px;
 	max-width: 100%;
-	height: auto;
+	height: 150px;
 	margin: 0px 30px 30px 0;
 	float: left;
 	clip-path: circle(48%);
 	shape-outside: circle(50%);
+	object-fit: cover;
+	object-position: center;
 	transition: transform 0.5s ease, box-shadow 0.2s ease;
 }
+
 
 .introImage:hover {
 	transform: scale(1.2,1.2);
 	filter: drop-shadow(4px 4px 20px #FF69B4);
-	
 }
 
 h1 {
