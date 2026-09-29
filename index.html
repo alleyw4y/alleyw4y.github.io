@@ -2,67 +2,95 @@
 <html lang="en-GB" >
 <head>
 	<link rel="stylesheet" href="style.css">
+	
+	<!-- links to fonts -->
+	<link href="https://fonts.googleapis.com/css2?family=Geo:ital@0;1&family=Nova+Square&display=swap" rel="stylesheet">
+
+	
 	<title>Alleyway Portfolio</title>
 </head>
 
 <body>
 
 <div class="header">
-  <h1>Alice Rennie</h1>
-  <p>Personal Portfolio</p>
+  <img src="Media\animatedIcon.gif" alt="This is my icon!" style="width:300px;height:auto;margin:auto">
+  <h1 class = "boldTitle" style="color:#f9dbbd;margin:auto">Alice Rennie</h1>
+  <p class = "boldTitle" style="color:#f9dbbd;margin:auto">Personal Portfolio</p>
 </div>
 
 <div class="intro">
 	<section>
-		<h2>About me</h2>
+		<h2 class = "boldTitle" style="text-align:center;font-size:200%;">About me</h2>
 		<img src="Media/Alice.png" onmouseover="this.src='Media/Puter.png'" onmouseout="this.src='Media/Alice.png'" alt="hover image" class="introImage">
-		<p>Hi I'm Alice! I'm a 4th year student from Abertay University, currently studying Computer Games Applications Development. 
+		<p class = "paragraphFont" style="font-size: 125%;">Hi I'm Alice! I'm a 4th year student from Abertay University, currently studying Computer Games Applications Development. 
 		I've been interested in programming since I was young, and ended up winning the higher computing prize for my high school. 
 		In my free time I love reading, playing basketball, and of course - gaming. I'm the secretary of the Women in Games society, 
-		while also being a Women in Games ambassador, which focuses on creating cafe spaces and introducing women into the industry. 
+		while also being a Women in Games ambassador, which focuses on creating safe spaces and introducing women into the industry. 
 		I'm also the Abertay Women's Basketball Captain, returning to my role for the second year! 
-		My favourite game of all time is Super Mario Galaxy.</p>
-		
+		My favourite game of all time is Super Mario Galaxy; I'm a big Nintendo Wii fan!.</p>	
 	</section>
 </div>
 
+<!-- this will be my nav bar
+<ul>
+	<li><a href="aboutMe.html">About Me</a></li>
+	<li><a href="projects.html">Projects</a></li>
+	<li><a href="">Secret Third Option</a></li>
+</ul>
+-->
+
 <hr>
 
-<h1>Projects</h1>
+<h1 class = "boldTitle">Projects</h1>
+<p class = "boldTitle" style = "text-align:center;font-size:125%;">Here is a collection of programs/games I have created! </p>
 
 <div class = "projectsBox">
 
 	<section class="gameSection">
-		<h2>Post Mortem | 2026</h2>
+		<h2 class = "boldTitle">Post Mortem | 2026</h2>
 		<div class="descriptionText">
 			<p>
 			<img class="gameImage" src="Media\PostMortem.gif" alt="This is post mortem">
 			</p>
-			<p>Post Mortem is a horror-focused adventure puzzle game in which you play as a Detective investigating an abandoned mansion. 
+			<p class = "paragraphFont">Post Mortem is a horror-focused adventure puzzle game in which you play as a Detective investigating an abandoned mansion. 
 			It was created as part of a group project for university, with us receiving industry mentoring throughout the project. 
 			As our game was narrative focused, I created a dialogue system in Unreal Engine 5.6, using interfaces to communicate across different NPCs. 
 			I also created an item system to show what objects had been collected throughout the game, and a timer system to add challenge and tension to the game through a stalking enemy.</p>
 			<br>
-			<a href="https://wicked-lynx.itch.io/post-mortem">Click here to view on itch!</a>
+			<a class = "underline" href="https://wicked-lynx.itch.io/post-mortem">Click here to view on itch!</a>
 		</div>
 	</section>
 
 	<section class="gameSection">
-		<h2>Camping Scene | 2025</h2>
+		<h2 class = "boldTitle">Camping Scene | 2025</h2>
 		<div class="descriptionText">
 			<img class="gameImage" src="Media\CampingScene.gif" alt="This is camping">
-			<p>FFor CMP301, I was tasked with programming a comprehensive scene using DirectX and C++. 
+			<p class = "paragraphFont">For 3rd year graphics programming in university, I was tasked with programming a comprehensive scene using DirectX and C++. 
 			This was my first experience of programming shaders, and consolidated my knowledge of complex geometry, lighting and texturing, 
 			while also teaching me new skills such as post processing, render textures and graphics pipelines. 
 			I utilised the vertex and pixel shaders in order to create my scene, while optimising my code by using an hlsli file where I could to reuse code.</p>
 		</div>
 	</section>
+	
+	<section class="gameSection">
+		<h2 class = "boldTitle">Turn Based Enemy AI | 2025</h2>
+		<div class="descriptionText">
+			<img class="gameImage" src="Media\TurnBasedRPG.gif" alt="This is camping">
+			<p class = "paragraphFont">For my games AI programming module (NOT GEN AI) I decided to implement and evaluate decision trees for a turn based RPG game. 
+				A template was provided to me from the university for the game, allowing me to focus on the AI implementation.
+				The topic intruiged me as I'm a big fan of the Fire Emblem games, and wanted to see some of the theory behind different playstyles, and find out which was the most effective.
+				The application investigated the effectiveness of different AIs when adjusting their priorities and options. 
+				This was achieved through the implementation of 27 different decision trees for an enemy team against a control team in a turn-based game.
+
+</p>
+		</div>
+	</section>
 
 	<section class="gameSection">
-		<h2>Wager of the Wolf | 2025</h2>
+		<h2 class = "boldTitle">Wager of the Wolf | 2025</h2>
 		<div class="descriptionText">
 			<img class="gameImage" src="Media\WageroftheWolf.gif" alt="This is wager of the wolf">
-			<p>Wager of the Wolf is a group project with the goal of utilising the functionality of the PlayStation 5 controller. 
+			<p class = "paragraphFont">Wager of the Wolf was a group project with the goal of utilising the functionality of the PlayStation 5 controller. 
 			We prioritised implementing tilt controls and haptic feedback through use of the triggers and controller vibration. 
 			I also created an audio system through accessing the player state to choose the correct audio track to be played for each action (eg: running, sliding, attacking, jumping). 
 			This project was programmed using university made framework, and PS5 development kits.</p>
@@ -70,7 +98,7 @@
 	</section>
 
 	<section class="gameSection">
-		<h2>Picnic Scene | 2024</h2>
+		<h2 class = "boldTitle">Picnic Scene | 2024</h2>
 		
 		<div class="descriptionText">
 		
@@ -100,7 +128,7 @@
 			
 			</div>
 		
-			<p>CMP203 was my first introduction to graphics programming, using geometry to create a scene. 
+			<p class = "paragraphFont">This was my first introduction to graphics programming, using geometry to create a scene. 
 			I gained a deeper understanding of vertex mapping in order to render different simple shapes such as cone, cylinder, cube and sphere. 
 			I had two perspective cameras: a free roaming camera, and a rotating camera that were calculated using projection matrices. 
 			I was also introduced to transformation hierarchies, and produced a fruit bowl with individual transformations, and a squirrel character with a dynamic tail, moving up and down.</p>
@@ -109,10 +137,10 @@
 	</section>
 
 	<section class="gameSection">
-		<h2>Abyssal Descent: Becoming the Fish | 2024</h2>
+		<h2 class = "boldTitle">Abyssal Descent: Becoming the Fish | 2024</h2>
 		<div class="descriptionText">
 			<img class="gameImage" src="Media\AbyssalDescentBTF.gif" alt="This is becoming the fish">
-			<p>Abyssal Descent was my first group project, and the first game I created in university, coded using C++ and SFML. 
+			<p class = "paragraphFont">Abyssal Descent was my first group project, and the first game I created in university, coded using C++ and SFML. 
 			It helped me understand how to make large scale object oriented programs, and made me more comfortable using pointers in a game project. 
 			It was originally a group project which was later taken by each member and individually expanded. 
 			I decided to add in cutscenes and a dialogue system, in order to introduce the player using a tutorial. I also refined some of the items and weapons in order to improve game feel. 
@@ -123,15 +151,16 @@
 
 <hr>
 
-<h1>Works in progress</h1>
+<h1 class = "boldTitle">Works in progress</h1>
+<p class = "boldTitle" style = "text-align:center;font-size:125%;">Here is a collection of my projects that I refuse to let go of... </p>
 
 <div class = "projectsBox">
 
 	<section class="gameSection">
-		<h2>Carnimals | 2026</h2>
+		<h2 class = "boldTitle">Carnimals | 2026</h2>
 		<div class="descriptionText">
 			<img class="gameImage" src="Media\Carnimals.gif" alt="This is carnimals">
-			<p>Carnimals was a summer project to reinforce the skills I learnt from Unreal Engine programming in the previous semester. 
+			<p class = "paragraphFont">Carnimals was a summer project to reinforce the skills I learnt from Unreal Engine programming in the previous semester. 
 			A prototype was created within two weeks, including character customisation, a lobby scene and a minigame. 
 			This project was my first instance of mobile development, and required me to research and implement UE5's mobile porting. 
 			I used android studio to emulate a phone on my PC, and also transferred the prototype so it was physically playable. 
@@ -140,11 +169,11 @@
 	</section>
 
 	<section class="gameSection">
-		<h2>Parry Mechanic | 2025</h2>
+		<h2 class = "boldTitle">Parry Mechanic | 2025</h2>
 		<div class="descriptionText">
 			<img class="gameImage" src="Media\ParryMechanic.gif" alt="This is parry">
-			<p>CMP302 was my first time in Unreal Engine, and challenged me to implement a mechanic into a scenario. 
-			I chose to implement a basic parry, counter and blocking system. 
+			<p class = "paragraphFont">Third year of university gave me my first time in Unreal Engine, tasking me with researching and implementing a game mechanic of my choice.
+			I chose to implement a parry, counter and blocking system. 
 			I created specific time windows in which the different mechanics would occur, and a cooldown window in order to add challenge and skill to the mechanic. 
 			I made this system compatible with UE5's combat pack. 
 			In the future, I would like to expand this to create a combat wave prototype, where you must defeat enemies using the damage you inflict from the counter timing. </p>
@@ -226,6 +255,7 @@
 </body>
 
 <footer>
-<p> &#xA9; Alice Rennie 2026 </p>
+<p class="footerStyle", style="color: #FF1493;font-size:125%;"> Alice Rennie 2026 | Contact me! email: 2301207@uad.ac.uk, <a class = "underline" href="https://www.linkedin.com/in/alice-rennie-3b785534a/">LinkedIn,</a> <a class = "underline" href="https://github.com/alleyw4y">GitHub</a></p>
 </footer>
+<br>
 </html>
