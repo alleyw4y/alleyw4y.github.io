@@ -170,6 +170,59 @@ a.underline:focus-visible::after {
 	border-width: medium;
 }
 
+.sticker
+{	
+	position: absolute;
+    max-width: 20%;
+    height: 95%;
+    max-height: 95%;
+    text-align: center;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-between;
+	width:300px;
+	height:auto;
+	margin-top:-30px;
+	max-width:400px;
+}
+
+ul
+{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	background-color: #da627d;
+	display: flex;
+	justify-content: center;
+	font-family: "Geo", sans-serif;
+	font-size: 1rem;
+}
+
+ul li a {
+  display: block;
+  color: #450920;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul li {
+  float: left;
+}
+
+ul li a:hover {
+  background-color: #ffa5ab;
+  color: #450920;
+}
+
+ul li a.active {
+  background-color: #a53860;
+  color: white;
+  text-decoration: underline;
+  font-size: 1.25rem;
+
 /* for the image carousel*/
 
 
