@@ -73,6 +73,8 @@ body {
 	font-family: Roboto, sans-serif;
 	border-radius: 1rem;
 	transition: transform 0.2s ease, box-shadow 0.2s ease;
+	
+	/*display: none; for the filter tags*/
 }
 
 .gameSection:hover {
@@ -203,6 +205,10 @@ a.underline:focus-visible::after {
 	width: 24px;
 	height: 24px;
 	padding-right: 2px;
+}
+
+.showItem {
+	display: block;
 }
 
 ul
