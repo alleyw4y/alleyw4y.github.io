@@ -46,14 +46,26 @@
 <h1 class = "boldTitle">Projects</h1>
 <p class = "boldTitle" style = "text-align:center;font-size:125%;">Here is a collection of programs/games I have created! </p>
 
+<div class = "buttonsContainer" id = "buttonsContainer">
+	<button class="buttonStyle active" onclick = "filterSelection('all')"> Show all</button>
+	<button class = "buttonStyle" onclick = "filterSelection('unreal')">Unreal Engine</button>
+	<button class = "buttonStyle" onclick = "filterSelection('sfml')">SFML</button>
+	<button class = "buttonStyle" onclick = "filterSelection('directx')">Direct X</button>
+	<button class = "buttonStyle" onclick = "filterSelection('ps5')">PlayStation 5</button>
+	<button class = "buttonStyle" onclick = "filterSelection('cpp')">C++</button>
+	<button class = "buttonStyle" onclick = "filterSelection('bps')">Blueprints</button>
+	<button class = "buttonStyle" onclick = "filterSelection('solo')">Solo Project</button>
+	<button class = "buttonStyle" onclick = "filterSelection('group')">Group Project</button>
+</div>
+
 <div class = "projectsBox">
 
-	<section class="gameSection">
+	<section class="gameSection unreal cpp bps group">
 		<h2 class = "boldTitle">Post Mortem | 2026</h2>
 		<div class="descriptionText">
 			<p>
 			<span class = "tag"><img class = "iconIMG" src="Media\UELogo.png">Unreal Engine</span>
-			<span class = "tag"><img class = "iconIMG" src="Media\keyboardIcon.png">C++</span>
+			<span class = "tag"><img class = "iconIMG" src="Media\keyboardIcon.png">C++ & BluePrints</span>
 			<span class = "tag"><img class = "iconIMG" src="Media\groupIcon.png">Group Project</span>
 			<br>
 			<br>
@@ -68,7 +80,7 @@
 		</div>
 	</section>
 
-	<section class="gameSection">
+	<section class="gameSection directx cpp solo">
 		<h2 class = "boldTitle">Camping Scene | 2025</h2>
 		<div class="descriptionText">
 			<p>
@@ -86,7 +98,7 @@
 		</div>
 	</section>
 	
-	<section class="gameSection">
+	<section class="gameSection sfml cpp solo">
 		<h2 class = "boldTitle">Turn Based Enemy AI | 2025</h2>
 		<div class="descriptionText">
 			<p>
@@ -107,7 +119,7 @@
 		</div>
 	</section>
 
-	<section class="gameSection">
+	<section class="gameSection ps5 cpp group">
 		<h2 class = "boldTitle">Wager of the Wolf | 2025</h2>
 		<div class="descriptionText">
 			<p>
@@ -125,7 +137,7 @@
 		</div>
 	</section>
 
-	<section class="gameSection">
+	<section class="gameSection cpp solo">
 		<h2 class = "boldTitle">Picnic Scene | 2024</h2>
 		
 		<p>
@@ -170,7 +182,7 @@
 		
 	</section>
 
-	<section class="gameSection">
+	<section class="gameSection sfml cpp group">
 		<h2 class = "boldTitle">Abyssal Descent: Becoming the Fish | 2024</h2>
 		<div class="descriptionText">
 			<p>
@@ -197,7 +209,7 @@
 
 <div class = "projectsBox">
 
-	<section class="gameSection">
+	<section class="gameSection unreal bps group">
 		<h2 class = "boldTitle">Carnimals | 2026</h2>
 		<div class="descriptionText">
 			<p>
@@ -216,7 +228,7 @@
 		</div>
 	</section>
 
-	<section class="gameSection">
+	<section class="gameSection unreal cpp solo">
 		<h2 class = "boldTitle">Parry Mechanic | 2025</h2>
 		<div class="descriptionText">
 			<p>
@@ -241,6 +253,49 @@
 	//image swapping
 	function swapImage(source) {
 		document.getElementById("portraitImage").src = source;
+	}
+	
+	filterSelection("all")
+	function filterSelection(c) {
+	  var x, i;
+	  x = document.getElementsByClassName("gameSection");
+	  if (c == "all") c = "";
+	  for (i = 0; i < x.length; i++) {
+		w3RemoveClass(x[i], "showItem");
+		if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "showItem");
+	  }
+	}
+
+	function w3AddClass(element, name) {
+	  var i, arr1, arr2;
+	  arr1 = element.className.split(" ");
+	  arr2 = name.split(" ");
+	  for (i = 0; i < arr2.length; i++) {
+		if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+	  }
+	}
+
+	function w3RemoveClass(element, name) {
+	  var i, arr1, arr2;
+	  arr1 = element.className.split(" ");
+	  arr2 = name.split(" ");
+	  for (i = 0; i < arr2.length; i++) {
+		while (arr1.indexOf(arr2[i]) > -1) {
+		  arr1.splice(arr1.indexOf(arr2[i]), 1);     
+		}
+	  }
+	  element.className = arr1.join(" ");
+	}
+
+	// Add active class to the current button (highlight it)
+	var buttonsGroup = document.getElementById("buttonsContainer");
+	var button = buttonsGroup.getElementsByClassName("buttonStyle");
+	for (var i = 0; i < button.length; i++) {
+	  button[i].addEventListener("click", function(){
+		var current = document.getElementsByClassName("active");
+		current[0].className = current[0].className.replace(" active", "");
+		this.className += " active";
+	  });
 	}
 	
 	/* 
@@ -301,7 +356,43 @@
 		  slides[slideIndex-1].style.display = "block";
 		  setTimeout(showSlides, 5000); // 5 seconds
 		}
-			
+		/*
+		filterSelection("all")
+		function filterSelection(c) {
+		var x, i;
+		x = document.getElementsByClassName("gameSection");
+		if (c == "all") c = "";
+		
+		//add show class to filtered elements
+		for (i = 0; i < x.length; i++) {
+		 removeClass(x[i], "show");
+		 if (x[i].className.indexOf(c) > -1) addClass(x[i], "show");
+		 }
+		}
+		
+		//show filtered elements
+		function addClass(element, name) {
+		 var i, arr1, arr2;
+		 arr1 = element.className.split(" ");
+		 arr2 = name.split(" ");
+		 for (i = 0; i < arr2.length; i++) {
+		  element.className += " " + arr2[i];
+		  }
+		 }
+		}
+		
+		//hide non filtered elements
+		function removeClass(element, name) {
+		 var i, arr1, arr2;
+		 arr1 = element.className.split(" ");
+		 arr2 = name.split(" ");
+		 for (i = 0; i < arr2.length; i++) {
+		 while (arr1.indexOf(arr2[i]) > -1) {
+			arr1.splice(arr1.indexOf(arr2[i]), 1);
+			}
+		   }
+		  element.className = arr1.join(" ");
+		} */
 			
 </script>
 	

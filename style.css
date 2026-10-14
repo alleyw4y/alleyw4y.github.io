@@ -74,7 +74,7 @@ body {
 	border-radius: 1rem;
 	transition: transform 0.2s ease, box-shadow 0.2s ease;
 	
-	/*display: none; for the filter tags*/
+	display: none; /*for the filter tags*/
 }
 
 .gameSection:hover {
@@ -209,6 +209,37 @@ a.underline:focus-visible::after {
 
 .showItem {
 	display: block;
+}
+
+.buttonStyle {
+	border: none;
+	outline: none;
+	padding: 8px;
+	margin: 8px;
+	background-color: #da627d;
+	color: #450920;
+	cursor: pointer;
+	font-family: "Geo", sans-serif;
+	border-radius: 100px;
+	text-align: center;
+	display: inline;
+	height: 32px;
+	min-width: 128px;
+}
+
+.buttonStyle:hover {
+  background-color: #a53860;
+}
+
+.buttonStyle.active {
+  background-color: #450920;
+  color: #f9dbbd;
+}
+
+.buttonsContainer {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 ul
