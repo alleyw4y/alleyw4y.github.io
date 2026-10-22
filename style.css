@@ -224,29 +224,31 @@ a.underline:focus-visible::after {
 	color: #450920;
 	cursor: pointer;
 	font-family: "Geo", sans-serif;
+	font-size: 1rem;
 	border-radius: 100px;
 	text-align: center;
 	display: inline;
 	height: 32px;
 	min-width: 128px;
+	transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .buttonStyle:hover {
-  background-color: #a53860;
-  
+	background-color: #a53860;
 	cursor: url(https://64.media.tumblr.com/467c08a8fa285ac447b4281313e2453e/c6221eab5d309db2-5b/s75x75_c1/7f1eb04c96554be55468e50c9d90696aae5f57ba.pnj), auto;
+	transform: translateY(-2px);
+	box-shadow: 0 4px 20px #da627d;
 }
 
 .buttonStyle.active {
-  background-color: #450920;
-  color: #f9dbbd;
+	background-color: #450920;
+	color: #f9dbbd;
 }
 
 .buttonsContainer {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 ul

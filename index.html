@@ -46,17 +46,22 @@
 <h1 class = "boldTitle">Projects</h1>
 <p class = "boldTitle" style = "text-align:center;font-size:125%;">Here is a collection of programs/games I have created! </p>
 
-<div class = "buttonsContainer" id = "buttonsContainer">
-	<button class="buttonStyle active" onclick = "filterSelection('all')"> Show all</button>
-	<button class = "buttonStyle" onclick = "filterSelection('unreal')">Unreal Engine</button>
-	<button class = "buttonStyle" onclick = "filterSelection('sfml')">SFML</button>
-	<button class = "buttonStyle" onclick = "filterSelection('directx')">Direct X</button>
-	<button class = "buttonStyle" onclick = "filterSelection('ps5')">PlayStation 5</button>
-	<button class = "buttonStyle" onclick = "filterSelection('cpp')">C++</button>
-	<button class = "buttonStyle" onclick = "filterSelection('bps')">Blueprints</button>
-	<button class = "buttonStyle" onclick = "filterSelection('solo')">Solo Project</button>
-	<button class = "buttonStyle" onclick = "filterSelection('group')">Group Project</button>
+<div id = "buttonsContainer">
+	<div class = "buttonsContainer">
+		<button class="buttonStyle active" onclick = "filterSelection('all')"> Show all</button>
+		<button class = "buttonStyle" onclick = "filterSelection('unreal')">Unreal Engine</button>
+		<button class = "buttonStyle" onclick = "filterSelection('sfml')">SFML</button>
+		<button class = "buttonStyle" onclick = "filterSelection('directx')">Direct X</button>
+		<button class = "buttonStyle" onclick = "filterSelection('ps5')">PlayStation 5</button>
+	</div>
+	<div class = "buttonsContainer">
+		<button class = "buttonStyle" onclick = "filterSelection('cpp')">C++</button>
+		<button class = "buttonStyle" onclick = "filterSelection('bps')">Blueprints</button>
+		<button class = "buttonStyle" onclick = "filterSelection('solo')">Solo Project</button>
+		<button class = "buttonStyle" onclick = "filterSelection('group')">Group Project</button>
+	</div>
 </div>
+
 
 <div class = "projectsBox">
 
@@ -77,6 +82,28 @@
 			I also created an item system to show what objects had been collected throughout the game, and a timer system to add challenge and tension to the game through a stalking enemy.</p>
 			<br>
 			<a class = "underline" href="https://wicked-lynx.itch.io/post-mortem">Click here to view on itch!</a>
+		</div>
+	</section>
+
+	<section class="gameSection unreal bps group">
+		<h2 class = "boldTitle">Shut Under | 2026</h2>
+		<div class="descriptionText">
+			<p>
+			<span class = "tag"><img class = "iconIMG" src="Media\UELogo.png">Unreal Engine</span>
+			<span class = "tag"><img class = "iconIMG" src="Media\keyboardIcon.png">BluePrints</span>
+			<span class = "tag"><img class = "iconIMG" src="Media\groupIcon.png">Group Project</span>
+			<br>
+			<br>
+			<img class="gameImage" src="Media\ShutUnder.png" alt="This is shut under">
+			</p>
+			<p class = "paragraphFont">In October 2026, RNIB (Royal National Institute of Blind People) teamed up with Scopely and Abertay University to put on a game jam for students of the university.
+										The game jam centred around blind and visually impaired gamers, and tasked jammers to produce a game that could be played by
+										non-sighted individuals. For our submission, my team submitted a game developed in Unreal Engine with zero visuals, in which the player must navigate 
+										a maze with a roaming enemy while only using audio and haptic feedback. I worked on implementing the haptics using a DualSense PS5 controller, which was
+										extremely fun to return to after having a taste in the PS5 module. Not only was this game jam extremely insightful and expanded my knowledge of
+										accessibility in gaming, it was also a ton of fun! My team (consisting of four programmers) ended up taking away the runners up prize for our game.</p>
+			<br>
+			<a class = "underline" href="Shut Under Link">Click here to view on itch!</a>
 		</div>
 	</section>
 
